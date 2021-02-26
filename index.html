@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <title>save animals.</title>
+  </head>
+  <body>
+    <p class="header">monkey walk's</p>
+    <img id="album" src="https://images-na.ssl-images-amazon.com/images/I/91zbi9M+mKL.jpg">
+    <div>
+      <button type="button" onclick="nextslide()">click me</button>
+    </div>
+  </body>
+  <script>
+    var image=[
+    "https://pbs.twimg.com/profile_images/923451113239703552/62jMMnTQ_400x400.jpg",
+    "https://i.pinimg.com/736x/f8/a9/dd/f8a9dd5024d6ebed33ae33db724d84e3.jpg",
+    "https://comps.canstockphoto.com/child-reading-book-kid-clip-art-vector_csp2633566.jpg",
+    ];
+
+    var i = 0;
+function nextslide() 
+{
+  if (i == 3)
+  {
+    i=0;
+  }
+ 
+  document.getElementById("album").src = images[i];
+  i++;
+}
+  </script>
+</html>
+    
